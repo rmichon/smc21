@@ -1,0 +1,8 @@
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+*.log
+*.toc
+smc21-proposal.pdf
