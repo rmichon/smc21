@@ -1,0 +1,155 @@
+\documentclass[fontsize=12pt]{scrartcl} % A4 paper and 11pt font size
+\usepackage[a4paper,margin=2cm,bottom=3cm]{geometry}
+\usepackage[utf8]{inputenc} % for french
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[francais]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{amssymb}
+\usepackage{url}
+
+\usepackage{float}
+\usepackage{graphicx}
+
+\usepackage{listings}
+\usepackage{courier}
+
+% parameters for listings
+\usepackage{color}
+\definecolor{mygrey}{rgb}{0.96,0.96,0.96}
+\lstset{
+  tabsize=4,
+  basicstyle=\ttfamily,
+  backgroundcolor=\color{mygrey},
+  captionpos=b,
+  breaklines=true
+}
+
+%\fontsize{16pt}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{hyperref}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{eurosym}
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[R]{} % Empty center footer
+\fancyfoot[C]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{2em} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+%\setlength{\parskip}{1em}
+
+%\renewcommand{\baselinestretch}{1.5}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{UJM (Saint-Étienne) // GRAME-CNCM (Lyon) // Gipsa-Lab (Grenoble)} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge 18\textsuperscript{ème} Conférence Sound and Music Computing (SMC-21)\\ St-Étienne -- Juin 2021 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\date{} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+Ce document présente une ébauche de l'organisation de la conférence SMC (\textit{Sound and Music Computing}) à St-Étienne en juin 2021. TODO: more.
+
+\tableofcontents
+
+% TODO: keynotes
+
+\section{La conférence SMC}
+
+\subsection{Vue d'ensemble}
+
+Le calcul du son et de la musique (SMC -- \textit{Sound and Music Computing}) est un domaine de recherche dont le but est d'étudier les liens entre musique, acoustique et technologie d'un point de vue interdisciplinaire. SMC peut être découplé en un ensemble de sous-domaines comprenant :
+
+\begin{itemize}
+  \item \textbf{le traitement des signaux audios/acoustiques et musicaux} qui regroupe l'ensemble des techniques de traitement du signal pour l'analyse, la synthèse et la transformation des signaux musicaux et audios ;
+  \item \textbf{la compréhension et la modélisation des sons et de la musique} qui regroupe la musicologie computationnelle, la récupération automatisée d'informations musicales et l'aspect informatique des sciences cognitives appliquées à la musique ;
+  \item \textbf{les interfaces pour le contrôle du son et de la musique} qui est directement lié au domaine des interfaces homme/machine ;
+  \item \textbf{l'assistance à la création musicale et sonore} qui regroupe le design sonore, les langages de programmations associé à ce domaine et la composition assistée par ordinateur.
+\end{itemize}
+
+De manière plus générale, le domaine SMC est placé au cœur de la révolution du numérique en entretenant des liens forts avec les domaines des technologies du web, de la réalité virtuelle/augmentée, de l'intelligence artificielle, etc. 
+
+La conférence SMC (\textit{Sound and Music Computing}) a été fondée en 2004 et est le fruit de l'union des JIMs (\textit{Journées de l'Informatique Musicale})\footnote{\url{http://jim.afim-asso.org/}} française et de leur équivalent italien : les CIMs (\textit{Colloqui di Infromatica Musicale})\footnote{\url{http://www.aimi-musica.org/}}. SMC a depuis pris une ampleur considérable pour devenir un rendez-vous incontournable international des communautés de traitement du signal audio, des interfaces homme/machine pour la musique, de l'informatique musicale, des sciences cognitives appliquées à la musique, etc. SMC a lieu chaque année dans une grande ville européenne (ex. Málaga, Chypre, Helsinki, Hambourg, Dublin, Athène, etc. pour les six dernières éditions) et réunis des conférenciers et des artistes venant des quatre coins du monde.
+
+SMC s'organise autour de trois grands évènements : une école d'été (\textit{Summer School}), une conférence scientifique et une programmation artistique riche et variée avec des concerts et des installations/expositions.
+
+\subsection{École d'été}
+
+D'une durée de quatre jours (avant la conférence), l'école d'été de SMC offre une série de workshops (en Anglais) d'une journée donnés par des grands noms de la communauté scientifique sur des sujets de pointe à destination d'étudiants internationaux aux profils d'excellence en master ou en doctorat. Pour référence, les professeurs invités de l'édition 2019 de l'école d'été étaient David Cuartielles (co-fondateur d'Arduino), Jorge Calvo-Zaragoza (université McGill), Koka Nikoladze (créateurs d'instruments de musique aux millions de vues sur les réseaux sociaux) et Peter Knees (université technique de Vienne). 
+
+\subsection{Conférences scientifique}
+
+D'une durée de trois jours, la conférence scientifique fait suite à l'école d'été de SMC. Entre 150 et 200 personnes y participent. Quatre types de présentations y sont proposées : des présentations orales, des posters, des démos et des workshops. 
+
+Les présentations orales et les posters font l'objet de publications scientifiques publiées au therme de la conférence dans des actes (\textit{proceedings}). Les publications sont choisies et validées par un commité international d'experts composé de membres de la communauté scientifique. Les présentations orales ont une durée de quinze minutes chacune et ont lieu dans un amphithéâtre. Les posters sont présentés lors de sessions spéciales dans une grande pièce/un hall où les conférenciers peuvent déambuler. 
+
+Les démos permettent de présenter des outils/des technologies en interagissant directement avec le public. Les sessions de démo prennent la même forme que les sessions de posters : les démonstrateurs tiennent des stands dans une grande pièce ou le public peut circuler. À la différence des posters et des présentations orales, les démos sont sélectionnées directement par le commité d'organisation de la conférence.
+
+D'une durée de deux heures, les workshops sont des ateliers/cours lors desquelles des outils ou des technologies de pointe sont présentés aux participants. Le nombre de participants à un workshop est généralement limité (en général 30 personnes sauf recommendation particulière de l'enseignant). Les workshops sont sélectionnés directement par le commité d'organisation de la conférence.
+
+\subsection{Programme artistique} 
+
+Un programme artistique riche et varié centré autour des nouvelles technologies a lieu en parallèle de la conférence. Il regroupe des concerts de musique actuelle, expérimentale/exploratoire, contemporaine, orchestrale, etc., ainsi que des installations interactives et des expositions. Traditionnellement, au moins un concert a lieu chaque jour de la conférence dans différentes salles de la ville d'accueil. De la même manière, les installations sonores et les expositions ont lieu dans différents lieux de la ville.
+
+\section{SMC à St-Étienne : une édition centrée sur le design}
+
+L'édition Stéphanoise de SMC mettra l'accent sur le design et les nouvelles technologies afin de s'inscrire dans la tradition de la ville. Ainsi, le thème suivant a été retenu pour SMC-21 : \textit{Computer Music and Design} (informatique musicale et design). Les dates précises de cet évènement n'ont pas encore été fixées, mais nous souhaiterions qu'il ai lieu lors de la deuxième quinzaine de juin 2021. Cette période coincide avec la biennale du design de St-Étienne, il serait fantastique qu'une collaboration est lieu entre ces deux évènements que nous pensons très complémentaires. De la même manière, nous souhaiterions que la partie scientifique de SMC ainsi que l'école d'été aient lieu à la cité du design afin d'affirmer cette identité et pour donner la meilleure image possible de St-Étienne aux participants. 
+
+\subsection{École d'été}
+
+L'école d'été aura lieu pendant quatre jours juste avant le début de la conférence. Elle aura pour thème : \textit{informatique musicale et design}. Ainsi, nous souhaiterions idéalement qu'elle prenne place à la cité du design. 
+
+Quatre grands noms de notre domaine seront invités pour donner un cours d'une journée sur un sujet de pointe de leur choix. Nous pensons notamment aux personnes suivantes :
+
+\begin{itemize}
+  \item Ge Wang -- professeur à l'école de design (D-School) et au Center for Computer Research in Music and Acoustics (CCRMA) de l'université Stanford, co-fondateur de la startup Smule, auteur de \textit{Artful Design: Technology in Search of the Sublime, A MusiComic Manifesto} ;
+  \item François Pachet -- directeur du Spotify Creator Technology Research Lab, auteur de \textit{Deep Learning Techniques for Music Generation}, producteur d'\textit{Hello World}, le premier album de musique intégralement composé par une intelligence artificielle ;
+  \item Yann Orlarey -- directeur scientifique du GRAME, inventeur du langage de programmation Faust ;
+  \item Roger Linn -- fondateur de Roger Linn Design, inventeur de la boîte à rythme et du LinnStrument récompensé par une Grammy Award.
+\end{itemize} 
+
+En parallèle de ces cours d'une journée, nous souhaiterions mettre en place une série d'ateliers pour le grand public et les scolaires sur différents sujet autour des technologies, du son, de l'acoustique et de la musique (ex. synthèse sonore et design sonore, programmation informatique, création de pédales d'effets de guitare, lutherie numérique, spatialisation du son, réalité virtuelle, etc.). Le contenu et la programmation de ces ateliers sera géré par le département de transmission de GRAME-CNCM. 
+
+Cet évènement était traditionnellement payant pour les participants mais nous voulons le rendre gratuit pour cette édition stéphanoise. De plus, un processus de sélection des étudiants sera mis en place comme les années précédentes mais la priorité sera donnée aux étudiants stéphanois. Deux salles (une pour les ateliers de haut niveau et une pour les ateliers grand public) équipées d'un vidéoprojecteur et d'un système de diffusion sonore seraient nécessaires.
+
+\subsection{Conférence scientifique}
+
+\subsection{Programme artistique}
+
+\section{Partenaires, organisateurs et commités scientifiques et artistiques}
+
+\section{Équipements spéciaux et ressources}
+
+\section{Contactes}
+
+\begin{itemize}
+\item Romain Michon, GRAME-CNCM -- \texttt{michon@grame.fr}
+\item Laurent Pottier, UJM -- \texttt{laurent.pottier@univ-st-etienne.fr}
+\end{itemize}
+
+\end{document}
